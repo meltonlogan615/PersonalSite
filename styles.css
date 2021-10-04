@@ -1,0 +1,270 @@
+/**** GLOBAL STYLES */
+
+:root {
+    --main-purple: #7f32cd;
+    --main-red: #cd3233;
+    --main-green: #80cd32;
+    --main-blue: #32cdcc;
+    --accent-purple: #F1E9FA;
+    --accent-red: #FAE9E9;
+    --accent-green: #F1FAE9;
+    --accent-blue: #E9FAFA;
+    --headline-color: #1f1f1f;
+    --text-color: #333;
+    --subtitle-color: #424242;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    background-color: var(--accent-green);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text-color);
+    font-weight: 300;
+    margin: 1rem;
+    letter-spacing: 00.025rem;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+    color: var(--headline-color)
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+a {
+    color: var(--text-color)
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+
+/**** NAVIGATION STYLES ****/
+
+.hero {
+    display: flex;
+}
+
+.hero a {
+    font-weight: 500;
+    text-decoration: underline;
+    color: blue;
+}
+
+.hero > img {
+    border-radius: 50%;
+    margin: 1rem auto;
+
+}
+
+.hero-text {
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+.page-title {
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: center;
+}
+.page-subtitle {
+    text-align: center;
+    color: var(--subtitle-color)
+}
+
+.page-title h1 {
+    letter-spacing: 0.125rem;
+}
+
+/**** NAVIGATION STYLES ****/
+
+.top-nav {
+    background-color: var(--accent-red);
+    display: flex;
+    flex: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.top-nav .nav-item {
+    border: none;
+    display: inline;
+    color: black;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.top-nav .nav-item a {
+    display: inline-flex;
+    padding: 0.75rem;
+    color: black;
+    text-decoration: none;
+    justify-content: space-between;
+
+}
+
+.top-nav .nav-item:hover {
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    color: black;
+}
+
+.project-details {
+    display: none;
+}
+
+.has-hover-details > .project-details:hover {
+    display: block;
+}
+
+
+/* NAVIGATION STYLES */
+
+.section-title {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+
+.about-text {
+    margin: 0.5rem 0;
+    padding: 0rem 2rem 0 3rem;
+    text-align: justify;
+    width: 50%;
+    line-height: 1.25rem;
+}
+.content-section {
+    background-color: antiquewhite;
+    display: flex;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.verbage {
+    display: block;
+    width: 60%;   
+}
+
+.article-title {
+    display: flex;
+    font-weight: 400;
+    justify-content: center;
+    width: auto;
+    margin: 1rem 1rem 0 1rem;
+}
+.article-subtitle {
+    display: flex;
+    font-weight: 400;
+    justify-content: center;
+    width: auto;
+    margin: 0.5rem 0;
+}
+
+.verbage .verbage-text {
+    margin-bottom: 1.5rem;
+    padding: 0 2rem 0 3rem;
+    text-align: justify;
+    line-height: 1.25rem;
+}
+
+.details-title {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.details-text {
+    color: orangered;
+    text-indent: 0.5rem;
+}
+
+.content-list li {
+    list-style-type: none;
+    margin: 0.125rem 0;
+}
+
+.work-details li {
+    list-style-type: square;
+    list-style-position: inside;
+    font-size: 0.9rem;
+}
+
+/* LINK BUTTONS */
+.code-link {
+    display: flex;
+    text-decoration: none;
+    margin: 1.5rem 0 1.5rem 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    background: linear-gradient(#fff, var(--accent-blue));
+    box-shadow: none;
+    border: 1px solid black;
+    width: fit-content;
+}
+
+
+.code-link:hover {
+    color: white;
+}
+
+/**** IMAGES ****/
+.content-image {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 40%;
+    /* padding: 1rem 0 1rem 0; */
+}
+
+.app-image {
+    display: flex;
+    margin: 1.5rem;
+    padding: 0 0.75rem;
+    height: 25vw;
+    -webkit-box-sizing: border-box;
+}
+
+.divider {
+    color: var(--accent-purple);
+    margin: 0.5rem;
+}
+
+/**** CONTACT BUTTONS ****/
+.contact-links {
+    display: flex;
+    margin: auto;
+    margin: 1.5rem auto;
+}
+
+.social-icon {
+    display: inline-flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: auto;
+    padding: 0 2rem;
+}
+
